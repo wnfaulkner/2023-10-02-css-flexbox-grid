@@ -1,0 +1,132 @@
+* {
+    /* height & width now includes border & padding */
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+  }
+     
+  body {
+    margin: 0;
+    font-family: Helvetica;
+    margin: 100px;
+    height: 100vh;
+    background-color: rgb(8, 74, 78) ;
+  }
+
+  .profileCard {
+    background-color: rgba(255, 255, 255, 0.959);
+    /* border: 2px solid black; */
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 50vh 50vh; */
+    justify-items: stretch;
+    /* justify-content: center; */
+    /* gap: 5px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr 2fr 2fr 1fr;
+    /* flex-wrap:nowrap; */
+        /* "profileCardHeader"
+        "profileCardRatingAndProfession"
+        "profileChargeRate"
+        "profileContactIcons" "profileContactIcons"; */
+  }
+
+  .profileCardHeader {
+    grid-column: 1 / 3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profileCardRatingAndProfession {
+    grid-column: 1 / 3;
+    /* text-align: center; */
+    background-color: rgba(236, 236, 236, 0.877);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profileChargeRate {
+    grid-column: 1 / 3;
+    background-color: rgba(255, 255, 255, 0.959);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .profileContactIcons {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .onlineStatus{
+    font-size: 11px;
+    grid-column: 2 / 3;
+    color: grey;
+    text-align: right;
+    margin: 3px;
+  }
+
+  .profilePic {
+    border: 2px solid rgb(130, 212, 109);
+    border-radius: 50%;
+    height: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .fullName{
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .ratingImage {
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  .profession{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .freeTime{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .minuteRate{
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+  }
+
+  #profileContactCallContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 226, 182);
+  }
+
+  #profileContactCall {
+    height: 50px;
+  }
+
+  #profileContactMessageContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 165, 95);
+  }
+ 
+  .profileContactImg {
+    height: 50px;
+  }
+
+
+
+ 
+ 
